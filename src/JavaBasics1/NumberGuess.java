@@ -1,11 +1,12 @@
-package Java1;
+package JavaBasics1;
 
 import java.util.Random;
 import java.util.Scanner;
 
 /**
  * @author amattson-sm
- * Assignment 1
+ * Java Basics 1
+ * Assignment 2: Guess a Number
  */
 public class NumberGuess {
 

@@ -1,7 +1,9 @@
-package Java1;
+package JavaBasics1;
 
 /**
  * @author amattson-sm
+ * Java Basics 1
+ * Assignment 1: Print shapes using loops
  */
 public class PrintPatterns {
 
