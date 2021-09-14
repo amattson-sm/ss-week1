@@ -5,7 +5,7 @@ package JavaBasics2;
  * Java Basics 2
  * Assignment 1: Add runtime arguments together
  */
-public class CommandLineSum {
+public class Assignment1 {
 
     /**
      * Create and start problem

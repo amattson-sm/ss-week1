@@ -8,14 +8,14 @@ import java.util.Scanner;
  * Java Basics 1
  * Assignment 2: Guess a Number
  */
-public class NumberGuess {
+public class Assignment2 {
 
     /**
      * Setup phase
      */
     final boolean debug = true;
     int target, chances;
-    public NumberGuess() {
+    public Assignment2() {
         // initialize vars
         Random r = new Random();
         chances = 5;
@@ -60,7 +60,7 @@ public class NumberGuess {
      * Create and call the problem
      */
     public static void main(String[] args) {
-        NumberGuess guesser = new NumberGuess();
+        Assignment2 guesser = new Assignment2();
         guesser.scanInput();
     }
 }

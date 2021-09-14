@@ -5,14 +5,14 @@ package JavaBasics2;
  * Java Basics 2
  * Assignment 2: Max number in a 2D array and its position
  */
-public class ArrayMaxPosition {
+public class Assignment2 {
 
     /**
      * initialize array and trackers
      */
     Integer[][] nums;
     Integer largest;
-    ArrayMaxPosition() {
+    Assignment2() {
         nums = new Integer[][]{ {5, 10, 15, 20}, {25, 60, 45, 70}, {2, 1, -99, 0} };
         largest = nums[0][0];
     }
@@ -36,7 +36,7 @@ public class ArrayMaxPosition {
      * Create and start the problem
      */
     public static void main(String[] args) {
-        ArrayMaxPosition arr = new ArrayMaxPosition();
+        Assignment2 arr = new Assignment2();
         arr.findLargest();
     }
 }

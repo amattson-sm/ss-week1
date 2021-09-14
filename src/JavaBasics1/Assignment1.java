@@ -5,7 +5,7 @@ package JavaBasics1;
  * Java Basics 1
  * Assignment 1: Print shapes using loops
  */
-public class PrintPatterns {
+public class Assignment1 {
 
     /**
      * Print out the patterns
@@ -66,7 +66,7 @@ public class PrintPatterns {
      * Create and call the problem
      */
     public static void main(String[] args) {
-        PrintPatterns print = new PrintPatterns();
+        Assignment1 print = new Assignment1();
         print.startPrint();
     }
 }
