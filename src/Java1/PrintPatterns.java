@@ -5,8 +5,12 @@ package Java1;
  */
 public class PrintPatterns {
 
-    // setup
-    private PrintPatterns() {
+    /**
+     * Print out the patterns
+     *      I interpreted the numbering [ 1) etc... ] and the hyphens as separators, and not
+     *      relevant to the code, so they are hardcoded between each problem.
+     */
+    public void startPrint() {
         // 1
         System.out.println("1)");
         for (int i = 1; i <= 4; i++) {
@@ -18,7 +22,7 @@ public class PrintPatterns {
         }
         System.out.println("---------\n");
 
-        //2
+        // 2
         System.out.println("2)\n----------");
         for (int i = 4; i >= 1; i--) {
             // print asterisks
@@ -28,7 +32,7 @@ public class PrintPatterns {
             System.out.print("\n");
         }
 
-        //3
+        // 3
         System.out.println("\n3)");
         for (int i = 0; i < 4; i++) {
             //print spaces
@@ -42,7 +46,7 @@ public class PrintPatterns {
         }
         System.out.println("-----------");
 
-        //4
+        // 4
         System.out.println("\n4)\n------------");
         for (int i = 0; i < 4; i++) {
             //print spaces
@@ -56,7 +60,11 @@ public class PrintPatterns {
         }
     }
 
+    /**
+     * Create and call the problem
+     */
     public static void main(String[] args) {
         PrintPatterns print = new PrintPatterns();
+        print.startPrint();
     }
 }

@@ -7,7 +7,10 @@ import java.util.Scanner;
  * @author amattson-sm
  */
 public class NumberGuess {
-    // setup
+
+    /**
+     * Setup phase
+     */
     final boolean debug = true;
     int target, chances;
     public NumberGuess() {
@@ -51,6 +54,9 @@ public class NumberGuess {
         System.out.println("You have run out of guesses. The number was: " + target + ". Better luck next time!");
     }
 
+    /**
+     * Create and call the problem
+     */
     public static void main(String[] args) {
         NumberGuess guesser = new NumberGuess();
         guesser.scanInput();
