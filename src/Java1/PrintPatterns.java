@@ -1,4 +1,4 @@
-package com.ss.weekone.intro;
+package Java1;
 
 /**
  * @author amattson-sm
