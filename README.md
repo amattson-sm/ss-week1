@@ -1,11 +1,11 @@
 
-Aidan Mattson  
-SmoothStack Project Container  
+Aidan Mattson
+SmoothStack Project Container
 
-Problem Filestructure:  
+Problem Filestructure:
 
-    src  
-     |  
-     ├ Java Module name (from Tovuti)  
-        |  
-        ├ "Assignment#.java"  
+    src
+     |
+     ├ Java Module name (from Tovuti)
+        |
+        ├ Assignment (.java or module)

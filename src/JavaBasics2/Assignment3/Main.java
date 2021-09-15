@@ -5,7 +5,7 @@ package JavaBasics2.Assignment3;
  * Java Basics 2
  * Assignment 3: Create a shape interface and some shapes
  */
-public class Control {
+public class Main {
     public static void main(String[] args) {
         // Create sample shapes
         Rectangle rect = new Rectangle(17d, 7d);
