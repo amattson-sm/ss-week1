@@ -37,8 +37,8 @@ public class Assignment1 {
             newString.append(target.getName());
             files.add(newString.toString());
 
-            // walk directory for new files
-            try(Stream<Path> paths = Files.walk(Paths.get(path))) {
+            // walk directory for new files - max depth 1 so we can format easier
+            try(Stream<Path> paths = Files.walk(Paths.get(path), 1)) {
                 List<Path> result = paths.collect(Collectors.toList());
                 for (Path p : result.subList(1, result.size())) {
                     // recursively traverse new files
@@ -76,8 +76,10 @@ public class Assignment1 {
         }
 
         // case - commandline path specified
-        if (args.length == 1)
+        if (args.length == 1) {
+            System.out.println("Argument found - running search with path '" + args[0] + "'");
             path = args[0];
+        }
 
         // case - accept path input from user
         else {
@@ -91,6 +93,7 @@ public class Assignment1 {
         List<String> files = fileFinder.findFiles(path, 0);
 
         // print results
+        System.out.println("");
         for (String entry : files)
             System.out.println(entry);
     }
