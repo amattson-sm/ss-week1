@@ -12,15 +12,16 @@ Problem Filestructure:
 
 
 
-Assignment key:
-    Java Basics 1
-      1 - Use loops to print out patterns
-      2 - Scan user input to guess a random number
-    Java Basics 2
-      1 - Parse commandline arguments and add them
-      2 - Scan a 2D array and identify the largest index
-      3 - Use an interface to create shapes (rect, tri, circ)
-    Java Basics 3
-      1 - List all file/directory names in a directory (inclusive)
-      2 - Append text to an existing file
-      3 - Count instances of a character in a file
+Assignment key:  
+
+    Java Basics 1  
+      1 - Use loops to print out patterns  
+      2 - Scan user input to guess a random number  
+    Java Basics 2  
+      1 - Parse commandline arguments and add them  
+      2 - Scan a 2D array and identify the largest index  
+      3 - Use an interface to create shapes (rect, tri, circ)  
+    Java Basics 3  
+      1 - List all file/directory names in a directory (inclusive)  
+      2 - Append text to an existing file  
+      3 - Count instances of a character in a file  
