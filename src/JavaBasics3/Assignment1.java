@@ -86,6 +86,7 @@ public class Assignment1 {
             System.out.print("No path specified; please enter a path: \n - ");
             Scanner in = new Scanner(System.in);
             path = in.nextLine();
+            in.close();
         }
 
         // call the function with the path specified

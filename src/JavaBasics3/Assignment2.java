@@ -1,6 +1,5 @@
 package JavaBasics3;
 
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -19,6 +18,7 @@ public class Assignment2 {
         System.out.print("Please enter a file to append to: \n - ");
         Scanner scan = new Scanner(System.in);
         String path = scan.nextLine();
+        scan.close();
         append(path);
     }
 
@@ -30,6 +30,7 @@ public class Assignment2 {
         System.out.print("Please enter a message to append: \n - ");
         Scanner scan = new Scanner(System.in);
         String message = scan.nextLine();
+        scan.close();
         append(path, message);
     }
 
