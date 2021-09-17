@@ -13,6 +13,7 @@ Problem Filestructure:
 
 
 Assignment key:
+
     Java Basics 1
       1 - Use loops to print out patterns
       2 - Scan user input to guess a random number
