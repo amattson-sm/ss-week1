@@ -24,3 +24,8 @@ Assignment key:
       1 - List all file/directory names in a directory (inclusive)
       2 - Append text to an existing file
       3 - Count instances of a character in a file
+    Java Basics 4
+      1 - Create a double-locked Singleton
+      2 - Deadlock two threads
+      3 - Producer and Consumer threads using a buffer
+      4 - (LineTest.java) test all methods in Line.java
