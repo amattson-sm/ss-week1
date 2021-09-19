@@ -14,8 +14,8 @@ import java.lang.System;
 
 /**
  * @author aidan.mattson
- * Java Basics 4
- * Assignment 4: Test all methods in Line.java
+ * Java Basics 5
+ * Tests for all Java Basics 5 classes
  */
 public class JavaBasics5Test {
     InputStream sysInBack = System.in;
