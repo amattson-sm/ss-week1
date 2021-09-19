@@ -30,3 +30,12 @@ Assignment key:
       2 - Deadlock two threads
       3 - Producer and Consumer threads using a buffer
       4 - (LineTest.java) test all methods in Line.java
+    Java Basics 5
+      1 - Implement several lambda functions
+      2 - Modify an Integer array: mod by 10
+      3 - Modify an Integer array: double all
+      4 - Modify a String array: remove 'x'
+      5 - Recursively determine if adding is possible with some rules
+      6 - Fix a singleton class
+    Weekend Tasks
+      X -

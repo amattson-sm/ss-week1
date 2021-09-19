@@ -104,6 +104,7 @@ public class JavaBasics5Test {
         // test regular input
         List<Integer> testOutput = functional.modulo(new ArrayList<>(Arrays.asList(5, 0, 50, 10102, 59)));
         List<Integer> correctOutput = new ArrayList<>(Arrays.asList(5, 0, 0, 2, 9));
+        Assert.assertEquals(testOutput.size(), correctOutput.size());
         for (int i = 0; i < testOutput.size(); i++)
             Assert.assertEquals(testOutput.get(i), correctOutput.get(i));
 
@@ -119,6 +120,7 @@ public class JavaBasics5Test {
         // test input
         List<Integer> testOutput = functional.doubleAll(new ArrayList<>(Arrays.asList(4, 6, 0, -10, 40404)));
         List<Integer> correctOutput = new ArrayList<>(Arrays.asList(8, 12, 0, -20, 80808));
+        Assert.assertEquals(testOutput.size(), correctOutput.size());
         for (int i = 0; i < testOutput.size(); i++)
             Assert.assertEquals(testOutput.get(i), correctOutput.get(i));
     }
@@ -131,7 +133,35 @@ public class JavaBasics5Test {
         // test input
         List<String> testOutput = functional.removeX(new ArrayList<>(Arrays.asList("", "ab", "xabfsx", "xx", "axa")));
         List<String> correctOutput = new ArrayList<>(Arrays.asList("", "ab", "abfs", "", "aa"));
+        Assert.assertEquals(testOutput.size(), correctOutput.size());
         for (int i = 0; i < testOutput.size(); i++)
             Assert.assertEquals(testOutput.get(i), correctOutput.get(i));
+    }
+
+    @Test
+    public void testRecursiveCondenser() {
+        // test Assignment 5: Recursive integer sums
+        Assignment5 recursive = new Assignment5();
+
+        // test the helper method for condensing and removing values
+        Integer[] testOutput = recursive.condenseArray(new Integer[] { 6, 2, 2, 2, 1, 0, 0, 1, 1, -15, 5, 5 });
+        Integer[] correctOutput = new Integer[] { 6, 6, 1, 2, -15, 10 };
+        Assert.assertEquals(testOutput.length, correctOutput.length);
+        for (int i = 0; i < testOutput.length; i++)
+            Assert.assertEquals(testOutput[i], correctOutput[i]);
+    }
+
+    @Test
+    public void testRecursiveGrouping() {
+        // test Assignment 5: Recursive integer sums
+        Assignment5 recursive = new Assignment5();
+
+        // test the actual recursive method
+        Integer[] testArr = new Integer[] { 6, 2, 2, 2, 1, 0, 0, 1, 1, -15, 5, 5 };
+        Assert.assertTrue(recursive.groupSumClump(testArr, 14));  // test possible with positives
+        Assert.assertFalse(recursive.groupSumClump(testArr, 5));  // test impossible with positives
+        Assert.assertFalse(recursive.groupSumClump(testArr, 24)); // test impossible with positives (large)
+        Assert.assertTrue(recursive.groupSumClump(testArr, -15)); // test possible with negatives (solo value)
+        Assert.assertTrue(recursive.groupSumClump(testArr, -14)); // test possible with negatives (combined value)
     }
 }
