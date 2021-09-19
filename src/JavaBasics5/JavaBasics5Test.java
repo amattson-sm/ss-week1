@@ -122,4 +122,16 @@ public class JavaBasics5Test {
         for (int i = 0; i < testOutput.size(); i++)
             Assert.assertEquals(testOutput.get(i), correctOutput.get(i));
     }
+
+    @Test
+    public void testFunctionalIII() {
+        // test Assignment 4: Functional Assignment (remove x's from strings)
+        Assignment4 functional = new Assignment4();
+
+        // test input
+        List<String> testOutput = functional.removeX(new ArrayList<>(Arrays.asList("", "ab", "xabfsx", "xx", "axa")));
+        List<String> correctOutput = new ArrayList<>(Arrays.asList("", "ab", "abfs", "", "aa"));
+        for (int i = 0; i < testOutput.size(); i++)
+            Assert.assertEquals(testOutput.get(i), correctOutput.get(i));
+    }
 }
