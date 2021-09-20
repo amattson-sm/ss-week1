@@ -41,3 +41,4 @@ Assignment key:
       1 - Use basic lambdas to sort a String array
       2 - Use Java 8 features to parse an int array into a string
       3 - Use lambdas and Stream API's to filter a list of Strings
+      DateTimeAPI - code snippet with some written answers and methods
