@@ -24,14 +24,6 @@ public class Assignment4 {
         // calculate results
         List<String> testInput = new ArrayList<>(Arrays.asList("ax", "xx", "blah", ""));
         List<String> testResult = functional.removeX(testInput);
-
-        // make results pretty
-        StringBuilder output = new StringBuilder("Result Array:\n[ '");
-        for (int i = 0; i < testResult.size(); i++) {
-            output.append(testResult.get(i));
-            if (i < testResult.size() - 1) output.append("', '");
-            else output.append("' ]");
-        }
-        System.out.println(output.toString());
+        System.out.println("Result Array:\n" + testResult);
     }
 }

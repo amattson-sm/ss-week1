@@ -160,7 +160,7 @@ public class JavaBasics5Test {
         Integer[] testArr = new Integer[] { 6, 2, 2, 2, 1, 0, 0, 1, 1, -15, 5, 5 };
         Assert.assertTrue(recursive.groupSumClump(testArr, 14));  // test possible with positives
         Assert.assertFalse(recursive.groupSumClump(testArr, 5));  // test impossible with positives
-        Assert.assertFalse(recursive.groupSumClump(testArr, 24)); // test impossible with positives (large)
+        Assert.assertFalse(recursive.groupSumClump(testArr, 26)); // test impossible with positives (large)
         Assert.assertTrue(recursive.groupSumClump(testArr, -15)); // test possible with negatives (solo value)
         Assert.assertTrue(recursive.groupSumClump(testArr, -14)); // test possible with negatives (combined value)
     }

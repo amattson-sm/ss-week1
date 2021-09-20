@@ -1,5 +1,6 @@
 package JavaWeekendTasks;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -24,23 +25,6 @@ public class Assignment1 {
         return first[0] - first[1];
     }
 
-    /**
-     * prints out an array nice and pretty
-     * @param p the array to print
-     */
-    public static void printArray(String prepend, String[] p) {
-        StringBuilder out = new StringBuilder(prepend);
-        out.append(": [ ");
-        for (int i = 0; i < p.length; i++) {
-            out.append("'").append(p[i]).append("'");
-            if (i < p.length - 1) {
-                out.append(", ");
-            }
-        }
-        out.append(" ]");
-        System.out.println(out.toString());
-    }
-
     public static void main(String[] args) {
         // array capable of testing all cases
         String[] basicStrings = new String[] { "one", "two", "elf", "eels", "oak", "other", "ap", "e" };
@@ -49,15 +33,15 @@ public class Assignment1 {
         //   using line suggested by IDE, original code here:
         //   - Arrays.sort(basicStrings, (String s1, String s2) -> s1.length() - s2.length());
         Arrays.sort(basicStrings, Comparator.comparingInt(String::length));
-        printArray("Length", basicStrings);
+        System.out.println("Length: " + Arrays.asList(basicStrings));
 
         // sort by reversed length
         Arrays.sort(basicStrings, Comparator.comparingInt(String::length).reversed());
-        printArray("Reversed Length", basicStrings);
+        System.out.println("Reversed Length: " + Arrays.asList(basicStrings));
 
         // sort alphabetically by first character
         Arrays.sort(basicStrings, Comparator.comparingInt((String s) -> s.charAt(0)));
-        printArray("First Character", basicStrings);
+        System.out.println("First Character: " + Arrays.asList(basicStrings));
 
         // sort with 'e' first
         Arrays.sort(basicStrings, (String s1, String s2) -> {
@@ -66,10 +50,10 @@ public class Assignment1 {
             first[1] = s2.charAt(0) == 'e' ? -1 : 1;
             return first[0] - first[1];
         });
-        printArray("'e' First", basicStrings);
+        System.out.println("'e' First pt1: " + Arrays.asList(basicStrings));
 
         // sort with 'e' first but formatted differently
         Arrays.sort(basicStrings, Assignment1::myMethod);
-        printArray("'e' First", basicStrings);
+        System.out.println("'e' First pt2: " + Arrays.asList(basicStrings));
     }
 }

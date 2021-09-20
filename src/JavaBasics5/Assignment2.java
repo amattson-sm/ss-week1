@@ -27,14 +27,6 @@ public class Assignment2 {
         // calculate results
         List<Integer> testInput = new ArrayList<>(Arrays.asList(0, 1, 50, 30303, 90));
         List<Integer> testResult = functional.modulo(testInput);
-
-        // make results pretty
-        StringBuilder output = new StringBuilder("Result Array:\n[ ");
-        for (int i = 0; i < testResult.size(); i++) {
-            output.append(testResult.get(i));
-            if (i < testResult.size() - 1) output.append(", ");
-            else output.append(" ]");
-        }
-        System.out.println(output.toString());
+        System.out.println("Result Array:\n" + testResult);
     }
 }
