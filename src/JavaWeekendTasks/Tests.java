@@ -22,9 +22,14 @@ public class Tests {
         Assert.assertEquals(Assignment1.myMethod("e1", "e2"), Integer.valueOf(0));
     }
 
+    @Test
+    public void testIntegersToString() {
+        // Assignment 2: test all cases of the method
+        Assignment2 converter = new Assignment2();
 
-
-
+        // test cases: several basic numbers,
+        Assert.assertEquals(converter.getValues(Arrays.asList(1, 2, 3, 4, 10, 60, -50, 0)), "o1,e2,o3,e4,e10,e60,e-50,e0");
+    }
 
     @Test
     public void testStringFilterStreams() {

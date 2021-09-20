@@ -30,8 +30,6 @@ public class Assignment1 {
         String[] basicStrings = new String[] { "one", "two", "elf", "eels", "oak", "other", "ap", "e" };
 
         // sort by length
-        //   using line suggested by IDE, original code here:
-        //   - Arrays.sort(basicStrings, (String s1, String s2) -> s1.length() - s2.length());
         Arrays.sort(basicStrings, Comparator.comparingInt(String::length));
         System.out.println("Length: " + Arrays.asList(basicStrings));
 
@@ -57,3 +55,7 @@ public class Assignment1 {
         System.out.println("'e' First pt2: " + Arrays.asList(basicStrings));
     }
 }
+
+
+
+//Arrays.sort(basicStrings, (String s1, String s2) -> s1.length() - s2.length());
