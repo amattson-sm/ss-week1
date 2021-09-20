@@ -38,4 +38,6 @@ Assignment key:
       5 - Recursively determine if adding is possible with some rules
       6 - Fix a singleton class
     Weekend Tasks
-      X -
+      1 - Use basic lambdas to sort a String array
+      2 - Use Java 8 features to parse an int array into a string
+      3 - Use lambdas and Stream API's to filter a list of Strings

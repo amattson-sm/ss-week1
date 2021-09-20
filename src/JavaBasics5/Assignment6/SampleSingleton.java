@@ -14,7 +14,8 @@ public class SampleSingleton {
     /** add a base private constructor **/
     private SampleSingleton() {}
 
-    public static SampleSingleton getInstance() {
+    /** make synchronized to prevent race conditions **/
+    public static synchronized SampleSingleton getInstance() {
         /** add a call to create an instance **/
         if (instance == null) instance = new SampleSingleton();
 
